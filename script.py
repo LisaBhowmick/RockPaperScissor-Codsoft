@@ -79,6 +79,8 @@ def checkWin(player, computer):
         updateUserScore()
     else:
         updateMessage("You lose!", "#FF6347")
+        updateCompScore()  # ✅ FIX: increase computer's score when it wins
+
 
 def animate_transition(label, img):
     label.config(image=img)
